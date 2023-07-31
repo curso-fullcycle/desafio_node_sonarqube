@@ -11,4 +11,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '20.5.0'
-      - run: npm test -- --coverage
+      - run: |
+          npm install
+          npm test -- --coverage
